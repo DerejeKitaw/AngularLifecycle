@@ -1,28 +1,22 @@
 # AngularLifecycle
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.2.
+[Source](https://angular.io/guide/lifecycle-hooks)
+A component has a lifecycle managed by Angular.
 
-## Development server
+## Angular 
+    creates component, 
+    renders component, 
+    creates and renders components children, 
+    checks component when components data-bound properties change, and 
+    destroys component before removing component from the DOM.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Developers can tap into key moments in that `lifecycle` by implementing one or more of the lifecycle hook interfaces in the Angular core library.
 
-## Code scaffolding
+Each interface has a single hook method whose name is the interface name prefixed with `ng`. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+    For example, the OnInit interface has a hook method named ngOnInit()
 
-## Build
+No directive or component `will implement all of the lifecycle hooks` and some of the hooks only make sense for components. 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+    Angular only calls a directive/component hook method if it is defined.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
