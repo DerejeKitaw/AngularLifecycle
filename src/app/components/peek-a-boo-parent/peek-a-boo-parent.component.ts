@@ -33,4 +33,5 @@ export class PeekABooParentComponent {
     this.heroName += '!';
     this.logger.tick();
   }
+  
 }

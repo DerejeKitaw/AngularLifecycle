@@ -54,6 +54,7 @@ export class PeekABooComponent implements
     for (let propName in changes) {
       if (propName === 'name') {
         let name = changes['name'].currentValue;
+        console.log("Changes: "+ name);
         changesMsgs.push(`name ${this.verb} to "${name}"`);
       } else {
         changesMsgs.push(propName + ' ' + this.verb);
